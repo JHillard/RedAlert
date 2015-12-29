@@ -1,0 +1,15 @@
+Psuedo Docs:
+
+RedAlert:
+This helps you post something to reddit and walk away. If you're a content creator or need to know if certain things are being discussed, this is the app for you.
+RedAlert monitors reddit and notifies you via text message when something goes on. It will directly text you your messages (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
+
+
+Overview of service:
+	Will monitor the messages of as many reddit acounts you want (Usefull for alts)
+	Will monitor a subreddit for any keywords you enter
+	Will monitor a specific post to a subreddit and text you how it is doing with vote counts and comment numbers at an interval of your choosing.
+
+How to use it:
+	First, you need to build your config file.
+	You'll need a Reddit client secret etc to use this yourself.

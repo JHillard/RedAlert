@@ -24,6 +24,18 @@ import shlex
 
 # -- General configuration ------------------------------------------------
 
+
+import sphinx_rtd_theme
+
+html_theme = "sphinx_rtd_theme"
+
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#Using the cool sphinx theme found here:  https://github.com/snide/sphinx_rtd_theme
+
+
+
+
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 

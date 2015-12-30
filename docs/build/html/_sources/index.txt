@@ -7,7 +7,7 @@ Welcome to RedAlert's documentation!
 ====================================
 If you're a content creator or need to know if certain things are being discussed, this is the app for you.
 
-RedAlert monitors reddit and notifies you via text message when something goes on. It will directly text you your messages (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
+RedAlert monitors reddit and notifies you via text message when something happening. It will directly text you your PMs (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
 
 Contents:
 =========
@@ -21,9 +21,9 @@ Contents:
    questions
 
 
-`Git hub <https://github.com/JHillard/RedAlert.git>_`
+`Git hub <https://github.com/JHillard/RedAlert.git>`_
 
-`Download <https://github.com/JHillard/RedAlert.git>_`
+`Download <https://github.com/JHillard/RedAlert.git>`_
 
 
 

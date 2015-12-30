@@ -1,11 +1,7 @@
-.. RedAlert documentation master file, created by
-   sphinx-quickstart on Mon Dec 28 16:45:34 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Welcome to RedAlert's documentation!
 ====================================
-If you're a content creator or need to know if certain things are being discussed, this is the app for you.
+If you want to post to reddit and walk away, this is the app for you. Perfect for content creators.
 
 RedAlert monitors reddit and notifies you via text message when something happening. It will directly text you your PMs (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
 
@@ -15,15 +11,13 @@ Contents:
 .. toctree::
    :maxdepth: 3
 
+   requirements
    application
    code
    license
    questions
 
 
-`Git hub <https://github.com/JHillard/RedAlert.git>`_
-
-`Download <https://github.com/JHillard/RedAlert.git>`_
 
 
 
@@ -34,58 +28,40 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-.. _git: 
-.. _download: https://github.com/JHillard/RedAlert.git
 
-
-.. _my-reference-label:
-
-Section to cross-reference
---------------------------
-
-This is the text of the section.
-
-It refers to the section itself, see :ref:`my-reference-label`.
-
-
-
-
-
-
-
-
-
-
-
-
-Features
---------
-
-- Be awesome
-- Make things faster
-
-.. _install
+.. _install:
 
 Installation
 ------------
 
-Install $project by running:
+RedAlert is a script, so it doesn't need to be 'installed' in the traditional sense.
+Just check the :ref:`required-software` and then :ref:`download`! 
 
-    install project
+.. _download:
+
+Download
+--------
+
+`Download from Git hub <https://github.com/JHillard/RedAlert.git>`_
+
+`Download just the script <https://github.com/JHillard/RedAlert.git>`_ #TODO, add just script
+
 
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+- `Issue Tracker: <https://github.com/JHillard/RedAlert/blob/master/issues>`_
+- `Source Code: <https://github.com/JHillard/RedAlert.git>`_
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+If you are having issues, please let us know. RedAlertBot@gmail.com
+
 
 License
 -------
 
-The project is licensed under the BSD license.
+The project is licensed under the MIT something or other 
+If you decide to use it, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. I'd love to know who is using the code.
+TODO, Fix

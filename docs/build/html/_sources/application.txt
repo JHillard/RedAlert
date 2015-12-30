@@ -1,9 +1,9 @@
-Using the Script:
-================
+Using the Script
+================	
 
 How to run the python script just on its own.
-
 * :ref:`quick-start`
+* :ref:`first-time`
 	* :ref:`phone-num`
 	* :ref:`email-auth`
 	* :ref:`red-auth`
@@ -15,32 +15,32 @@ How to run the python script just on its own.
 	* :ref:`job-custom`
 * :ref:`running`
 
-
-_stuff()
-
-
 .. _quick-start:
 
 Quick Start:
 ------------
-
 First :ref:`download` the script.
 Check that you have the :ref:`required-software`
 
-Then run it with python!
-	Code Exerpt
+Then run RedAlert in terminal (be sure your terminal is open in the directory of download)::
 	python3 RedAlert.py
-	>>you win!!!!
+	>>RedAlert booting...
 
-Then theres just some first time setup.
+TODO Figure 3	
 
+Follow :ref:`first-time` and go through the steps of :ref:`red-auth`.
 
+RedAlert by default starts by checking your messages. So if that's all you need, you can just run it from there!
 
+.. _first-time:
+
+First Time Setup:
+-----------------
 .. _phone-num:
 
-Formatting your Phone Number:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In order to get text messages, you have to tell it where to send them!
+Adding your Phone Number:
+^^^^^^^^^^^^^^^^^^^^^^^^^
+In order to get text messages, you have to tell RedAlert where to send them!
 RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own `Google "Email to text provider list" <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=email+to+text+provider+list>`_
 Here's the top hits I found at http://www.textsendr.com/emailsms.php:
 
@@ -62,16 +62,19 @@ Vodafone         [phone number]@vodafone.net
 
 .. _email-auth:
 
-Enabling Email Authorization:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding your Email:
+^^^^^^^^^^^^^^^^^^
 
 RedAlert sends email through a gmail account. But you need to enable less secure apps in Gmail first.
 https://www.google.com/settings/security/lesssecureapps
 
 Follow that link, log into your email, and turn on access for less secure apps.
 There you go!
+
+
 Now when RedAlert logs in with your information, Google won't reject it.
-(Yes, this method is horribly insecure, but it works alright. Will be changed on future update.)
+
+.. note:: Yes, this method is horribly insecure, but it works alright. If you're worried about being spammed or security, I'd recommend looking through the source code to see how we handle this information. Everything is stored locally, so no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.
 
 
 .. _red-auth:
@@ -138,7 +141,27 @@ Jobs persist after you close RedAlert. So once you get things how you like them,
 
 Adding Jobs:
 ^^^^^^^^^^^^
-How to add a job.
+Pretty straight forward.
+
+::
+	What would you like to do?
+		1.Add job
+		2.Delete Job
+		3.Add User
+		4.Run RedAlert
+	1
+	What task do you want to add:
+		1.Message checker
+		2.Subreddit Keyword Monitor
+		3.Submission Monitor
+		4.Custom Job Entry
+		5.Back
+	1
+	Users: 
+		0: AccidentalGyroscope
+	None
+	User index: 0
+	Job made: Message Checker for u/AccidentalGyroscope
 
 
 .. _job-del:

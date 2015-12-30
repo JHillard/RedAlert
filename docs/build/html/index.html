@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="RedAlert 1.0 documentation" href="#"/>
-        <link rel="next" title="Using the Script:" href="application.html"/> 
+        <link rel="next" title="Required Software/Libraries" href="requirements.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -81,9 +81,10 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="application.html">Using the Script:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code.html">The Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code.html#code">The Code:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="application.html">Using the Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code Breakdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html#the-code">The Code:</a></li>
 </ul>
 
             
@@ -130,17 +131,19 @@
             
   <div class="section" id="welcome-to-redalert-s-documentation">
 <h1>Welcome to RedAlert&#8217;s documentation!<a class="headerlink" href="#welcome-to-redalert-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>If you&#8217;re a content creator or need to know if certain things are being discussed, this is the app for you.</p>
+<p>If you want to post to reddit and walk away, this is the app for you. Perfect for content creators.</p>
 <p>RedAlert monitors reddit and notifies you via text message when something happening. It will directly text you your PMs (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.</p>
 </div>
 <div class="section" id="contents">
 <h1>Contents:<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="application.html">Using the Script:</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="application.html#quick-start">Quick Start:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="application.html#formatting-your-phone-number">Formatting your Phone Number:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="application.html#enabling-email-authorization">Enabling Email Authorization:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="application.html">Using the Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="application.html#quick-start">Quick Start:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="application.html#first-time-setup">First Time Setup:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="application.html#adding-your-phone-number">Adding your Phone Number:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html#adding-your-email">Adding your Email:</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="application.html#authenticating-reddit">Authenticating Reddit</a></li>
@@ -155,8 +158,8 @@
 <li class="toctree-l2"><a class="reference internal" href="application.html#running-the-program">Running the Program!:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="code.html">The Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code.html#code">The Code:</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code Breakdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html#the-code">The Code:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="code.html#basic-code-structure">Basic Code Structure:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="code.html#the-user-manager-class">The User Manager Class:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="code.html#the-job-class">The Job Class:</a></li>
@@ -167,8 +170,6 @@
 </li>
 </ul>
 </div>
-<p><a class="reference external" href="https://github.com/JHillard/RedAlert.git">Git hub</a></p>
-<p><a class="reference external" href="https://github.com/JHillard/RedAlert.git">Download</a></p>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
@@ -177,39 +178,32 @@
 <li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
 </ul>
-<div class="section" id="section-to-cross-reference">
-<span id="my-reference-label"></span><h2>Section to cross-reference<a class="headerlink" href="#section-to-cross-reference" title="Permalink to this headline">¶</a></h2>
-<p>This is the text of the section.</p>
-<p>It refers to the section itself, see <a class="reference internal" href="index2.html#my-reference-label"><span>Section to cross-reference</span></a>.</p>
-</div>
-<div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Be awesome</li>
-<li>Make things faster</li>
-</ul>
-</div>
 <div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Install $project by running:</p>
-<blockquote>
-<div>install project</div></blockquote>
+<span id="install"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>RedAlert is a script, so it doesn&#8217;t need to be &#8216;installed&#8217; in the traditional sense.
+Just check the <a class="reference internal" href="requirements.html#required-software"><span>Required Software/Libraries</span></a> and then <a class="reference internal" href="#download"><span>Download</span></a>!</p>
+</div>
+<div class="section" id="download">
+<span id="id1"></span><h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/JHillard/RedAlert.git">Download from Git hub</a></p>
+<p><a class="reference external" href="https://github.com/JHillard/RedAlert.git">Download just the script</a> #TODO, add just script</p>
 </div>
 <div class="section" id="contribute">
 <h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Issue Tracker: github.com/$project/$project/issues</li>
-<li>Source Code: github.com/$project/$project</li>
+<li><a class="reference external" href="https://github.com/JHillard/RedAlert/blob/master/issues">Issue Tracker:</a></li>
+<li><a class="reference external" href="https://github.com/JHillard/RedAlert.git">Source Code:</a></li>
 </ul>
 </div>
 <div class="section" id="support">
 <h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
-<p>If you are having issues, please let us know.
-We have a mailing list located at: <a class="reference external" href="mailto:project&#37;&#52;&#48;google-groups&#46;com">project<span>&#64;</span>google-groups<span>&#46;</span>com</a></p>
+<p>If you are having issues, please let us know. <a class="reference external" href="mailto:RedAlertBot&#37;&#52;&#48;gmail&#46;com">RedAlertBot<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>The project is licensed under the BSD license.</p>
+<p>The project is licensed under the MIT something or other
+If you decide to use it, I ask that you send me an email (<a class="reference external" href="mailto:RedAlertBot&#37;&#52;&#48;gmail&#46;com">RedAlertBot<span>&#64;</span>gmail<span>&#46;</span>com</a>) just saying hello. I&#8217;d love to know who is using the code.
+TODO, Fix</p>
 </div>
 </div>
 
@@ -220,7 +214,7 @@ We have a mailing list located at: <a class="reference external" href="mailto:pr
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="application.html" class="btn btn-neutral float-right" title="Using the Script:" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="requirements.html" class="btn btn-neutral float-right" title="Required Software/Libraries" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

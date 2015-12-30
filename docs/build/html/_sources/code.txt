@@ -1,10 +1,9 @@
-The Code
-========
+Code Breakdown
+==============
 * :ref:'Basic code structure'
 	* :ref:'The UserManager Class'
 	* :ref:'The Job Class'
 * :ref:'Methods'
-* :ref:'Adding your own new jobs'
 * :ref:'Adding your own new jobs'
 	
 

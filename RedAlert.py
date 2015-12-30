@@ -22,6 +22,7 @@
 #This code heavily influence by the getting started documentation for PRAW. Thanks for being so thorough 
 #http://praw.readthedocs.org/en/stable/index.html
 #Email code done with help from:  http://naelshiab.com/tutorial-send-email-python/
+print("RedAlert Booting...")
 
 clientSecret = 'not_a_secret'
 redirURI = 'http://127.0.0.1:7117/authorize_callback'
@@ -420,14 +421,6 @@ def addJobs():
             print("Job String:" + execString + "\n") 
             print("Bad Job string. Perhaps incorrect custom job?")
 
-
-
-
-
-print("Compiled Methods")  
-
-
-# In[7]:
 
 r = UserManager()
 menu()

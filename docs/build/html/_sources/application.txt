@@ -45,12 +45,12 @@ To use the app, you need to register it with reddit, https://www.reddit.com/pref
 Formatting your Phone Number:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In order to get text messages, you have to tell it where to send them!
-RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own `Google "Email to text provider list" <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=email+to+text+provider+list>`
+RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own `Google "Email to text provider list" <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=email+to+text+provider+list>_`
 Here's the top hits I found at http://www.textsendr.com/emailsms.php:
 
-=============   =============
+==============  ========================================
 Cell Provider	Email Address
-=============   =============
+==============  ========================================
 AT&T        	[phone number]@txt.att.net
 
 Cricket			[phone number]@mms.mycricket.com
@@ -66,7 +66,7 @@ Verizon			[phone number]@vtext.com
 Virgin Mobile	[phone number]@vmobl.com
 Vodacom Africa	[phone number]@voda.co.za
 Vodafone		[phone number]@vodafone.net
-=============   =============
+==============  ========================================
 
 
 Phone number

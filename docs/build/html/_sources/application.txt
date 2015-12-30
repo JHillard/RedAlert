@@ -1,9 +1,9 @@
 The Application:
 ================
 
-documentation for running as a standalone python script.
+How to run the python script just on its own.
 
-* :ref:`first-run`
+* :ref:`quick-start`
 	* :ref:`your-ID`
 	* :ref:`phone-num`
 	* :ref:`email-auth`
@@ -17,34 +17,36 @@ documentation for running as a standalone python script.
 * :ref:`running`
 
 
-Project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
+_stuff()
 
 
-.. _first-run:
+.. _quick-start:
 
-First Run:
-----------
+Quick Start:
+------------
 
-First run text
-Check out :ref:`first-run`
+First :ref:`download` the script
+Then run it with python!
+	Code Exerpt
+	python3 RedAlert.py
+	>>you win!!!!
+
+Then theres just some first time setup.
 
 .. _your-ID:
 
 Getting your ID:
 ^^^^^^^^^^^^^^^^
-Your ID text.
+To use the app, you need to register it with reddit, https://www.reddit.com/prefs/apps/
+
 
 .. _phone-num:
 
 Formatting your Phone Number:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In order to get text messages, you have to tell it where to send them!
+
+
 Phone number
 this is all pnum text.
 

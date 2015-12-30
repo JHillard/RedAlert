@@ -16,6 +16,12 @@ Contents:
 
    application
    code
+   license
+   questions
+
+
+`Git hub <https://github.com/JHillard/RedAlert.git>`
+`Download <https://github.com/JHillard/RedAlert.git>`
 
 
 
@@ -25,6 +31,9 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _git: 
+.. _download: https://github.com/JHillard/RedAlert.git
 
 
 .. _my-reference-label:

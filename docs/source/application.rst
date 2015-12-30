@@ -24,7 +24,9 @@ _stuff()
 Quick Start:
 ------------
 
-First :ref:`download` the script
+First :ref:`download` the script.
+Check that you have the :ref:`required-software`
+
 Then run it with python!
 	Code Exerpt
 	python3 RedAlert.py
@@ -42,21 +44,21 @@ In order to get text messages, you have to tell it where to send them!
 RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own `Google "Email to text provider list" <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=email+to+text+provider+list>`_
 Here's the top hits I found at http://www.textsendr.com/emailsms.php:
 
-
-Cell Provider	Email Address
-
-AT&T        	[phone number]@txt.att.net
-Qwest			[phone number]@qwestmp.com
-Sprint			[phone number]@messaging.sprintpcs.com
-T Mobile		[phone number]@tmomail.net
-T Mobile (Ger)	[phone number]@T-D1-SMS.de
-T Mobile UK		[phone number]@t-mobile.uk.net
-V Mobile CA		[phone number]@vmobile.ca
-Verizon			[phone number]@vtext.com
-Virgin Mobile	[phone number]@vmobl.com
-Vodacom Africa	[phone number]@voda.co.za
-Vodafone		[phone number]@vodafone.net
-
+===============  ===========================
+Cell Provider    Email Address
+===============  ===========================
+AT&T             [phone number]@txt.att.net
+Qwest            [phone number]@qwestmp.com
+Sprint           [phone number]@messaging.sprintpcs.com
+T Mobile         [phone number]@tmomail.net
+T Mobile (Ger)   [phone number]@T-D1-SMS.de
+T Mobile UK      [phone number]@t-mobile.uk.net
+V Mobile CA      [phone number]@vmobile.ca
+Verizon          [phone number]@vtext.com
+Virgin Mobile    [phone number]@vmobl.com
+Vodacom Africa   [phone number]@voda.co.za
+Vodafone         [phone number]@vodafone.net
+===============  ===========================
 
 .. _email-auth:
 
@@ -67,12 +69,9 @@ RedAlert sends email through a gmail account. But you need to enable less secure
 https://www.google.com/settings/security/lesssecureapps
 
 Follow that link, log into your email, and turn on access for less secure apps.
-
 There you go!
-
 Now when RedAlert logs in with your information, Google won't reject it.
-
-(Yes, this method is horribly insecure, but it works and works well. Will be changed on future update.)
+(Yes, this method is horribly insecure, but it works alright. Will be changed on future update.)
 
 
 .. _red-auth:
@@ -86,8 +85,7 @@ To do that, go to the link presented by RedAlert on startup.
 Todo Figure 1.
 
 It'll be different every time. Each time you start up RedAlert you'll need to do this.
-
-Login into Reddit and then allow the app. Your browwer will then redirect to a dead webpage. Copy the access token there and paste it into the script.
+Login into Reddit and then allow the app. Your browser will then redirect to a dead webpage. Copy the access token there and paste it into the script.
 
 Todo Figure 2.
 
@@ -112,18 +110,18 @@ Types of Jobs:
 --------------
 There are currently three tasks RedAlert can accomplish (And I think you'll find they getcha where you need to go)
 
-*Message Checker
-	*Exactly what it sounds like. It checks your messages! If you have multiple accounts logged in you'll be able to choose which account you want checked. You can even have two message checkers on the same account. Why would you want that? I don't know!
-*Subreddit Keyword Monitor
-	*Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!
-	*To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You're Awesome.
-*Subbmission Monitor
-	*This one is handy for keeping tabs on how one of your posts is doing. Updates consist of:
-		*Number of Up votes and Down votes
-		*Number of comments the post has.
-	*Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.
-	*Paste your post ID (or directly enter it if you already knew it) where it asks
-	*Enter how frequently you'd like to recieve updates about this post. Only integer values accepted, don't be cheeky!
+* Message Checker
+	* Exactly what it sounds like. It checks your messages! If you have multiple accounts logged in you'll be able to choose which account you want checked. You can even have two message checkers on the same account. Why would you want that? I don't know!
+* Subreddit Keyword Monitor
+	* Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!
+	* To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You're Awesome.
+* Subbmission Monitor
+	* This one is handy for keeping tabs on how one of your posts is doing. Updates consist of:
+		* Number of Up votes and Down votes
+		* Number of comments the post has.
+	* Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.
+	* Paste your post ID (or directly enter it if you already knew it) where it asks
+	* Enter how frequently you'd like to recieve updates about this post. Only integer values accepted, don't be cheeky!
 
 
 .. _job-edit:

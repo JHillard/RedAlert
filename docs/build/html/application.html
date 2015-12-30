@@ -84,13 +84,12 @@
                 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">Using the Script:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#getting-your-id">Getting your ID:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#formatting-your-phone-number">Formatting your Phone Number:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#enabling-email-authorization">Enabling Email Authorization:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#reddit-authenticating">Reddit Authenticating:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-more-reddit-accounts">Adding More Reddit Accounts:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authenticating-reddit">Authenticating Reddit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-more-reddit-accounts">Adding More Reddit Accounts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#types-of-jobs">Types of Jobs:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-your-jobs">Editing your Jobs:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#adding-jobs">Adding Jobs:</a></li>
@@ -154,10 +153,9 @@
 <li><dl class="first docutils">
 <dt><a class="reference internal" href="#quick-start"><span>Quick Start:</span></a></dt>
 <dd><ul class="first last simple">
-<li><a class="reference internal" href="index2.html#your-id"><span>Getting your ID:</span></a></li>
 <li><a class="reference internal" href="index2.html#phone-num"><span>Formatting your Phone Number:</span></a></li>
 <li><a class="reference internal" href="index2.html#email-auth"><span>Enabling Email Authorization:</span></a></li>
-<li><a class="reference internal" href="index2.html#auth"><span>Reddit Authenticating:</span></a></li>
+<li><a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a></li>
 <li><a class="reference internal" href="index2.html#account-add"><span>Adding More Reddit Accounts:</span></a></li>
 </ul>
 </dd>
@@ -181,26 +179,24 @@
 <p>_stuff()</p>
 <div class="section" id="quick-start">
 <span id="id1"></span><h2>Quick Start:<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
-<p>First <span class="xref std std-ref">download</span> the script
-Then run it with python!</p>
-<blockquote>
-<div>Code Exerpt
+<p>First <span class="xref std std-ref">download</span> the script.
+Check that you have the <a class="reference internal" href="requirements.html#required-software"><span>Required Software/Libraries</span></a></p>
+<dl class="docutils">
+<dt>Then run it with python!</dt>
+<dd>Code Exerpt
 python3 RedAlert.py
-&gt;&gt;you win!!!!</div></blockquote>
+&gt;&gt;you win!!!!</dd>
+</dl>
 <p>Then theres just some first time setup.</p>
-<div class="section" id="getting-your-id">
-<span id="your-id"></span><h3>Getting your ID:<a class="headerlink" href="#getting-your-id" title="Permalink to this headline">¶</a></h3>
-<p>To use the app, you need to register it with reddit, <a class="reference external" href="https://www.reddit.com/prefs/apps/">https://www.reddit.com/prefs/apps/</a></p>
-</div>
 <div class="section" id="formatting-your-phone-number">
 <span id="phone-num"></span><h3>Formatting your Phone Number:<a class="headerlink" href="#formatting-your-phone-number" title="Permalink to this headline">¶</a></h3>
 <p>In order to get text messages, you have to tell it where to send them!
-RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own <cite>Google &#8220;Email to text provider list&#8221; &lt;https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=email+to+text+provider+list&gt;_</cite>
+RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own <a class="reference external" href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=email+to+text+provider+list">Google &#8220;Email to text provider list&#8221;</a>
 Here&#8217;s the top hits I found at <a class="reference external" href="http://www.textsendr.com/emailsms.php">http://www.textsendr.com/emailsms.php</a>:</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="23%" />
-<col width="77%" />
+<col width="28%" />
+<col width="72%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Cell Provider</th>
@@ -210,12 +206,6 @@ Here&#8217;s the top hits I found at <a class="reference external" href="http://
 <tbody valign="top">
 <tr class="row-even"><td>AT&amp;T</td>
 <td>[phone number]&#64;txt.att.net</td>
-</tr>
-<tr class="row-odd"><td>Cricket</td>
-<td>[phone number]&#64;mms.mycricket.com</td>
-</tr>
-<tr class="row-even"><td>Plus Poland</td>
-<td>[phone number]&#64;text.plusgsm.pl</td>
 </tr>
 <tr class="row-odd"><td>Qwest</td>
 <td>[phone number]&#64;qwestmp.com</td>
@@ -249,29 +239,87 @@ Here&#8217;s the top hits I found at <a class="reference external" href="http://
 </tr>
 </tbody>
 </table>
-<p>Phone number
-this is all pnum text.</p>
 </div>
 <div class="section" id="enabling-email-authorization">
 <span id="email-auth"></span><h3>Enabling Email Authorization:<a class="headerlink" href="#enabling-email-authorization" title="Permalink to this headline">¶</a></h3>
-<p>email auth text.</p>
+<p>RedAlert sends email through a gmail account. But you need to enable less secure apps in Gmail first.
+<a class="reference external" href="https://www.google.com/settings/security/lesssecureapps">https://www.google.com/settings/security/lesssecureapps</a></p>
+<p>Follow that link, log into your email, and turn on access for less secure apps.
+There you go!
+Now when RedAlert logs in with your information, Google won&#8217;t reject it.
+(Yes, this method is horribly insecure, but it works alright. Will be changed on future update.)</p>
 </div>
 </div>
-<div class="section" id="reddit-authenticating">
-<span id="auth"></span><h2>Reddit Authenticating:<a class="headerlink" href="#reddit-authenticating" title="Permalink to this headline">¶</a></h2>
-<p>Authenticating text</p>
+<div class="section" id="authenticating-reddit">
+<span id="red-auth"></span><h2>Authenticating Reddit<a class="headerlink" href="#authenticating-reddit" title="Permalink to this headline">¶</a></h2>
+<p>Now it&#8217;s time to let RedAlert see your messages!
+To do that, go to the link presented by RedAlert on startup.</p>
+<p>Todo Figure 1.</p>
+<p>It&#8217;ll be different every time. Each time you start up RedAlert you&#8217;ll need to do this.
+Login into Reddit and then allow the app. Your browser will then redirect to a dead webpage. Copy the access token there and paste it into the script.</p>
+<p>Todo Figure 2.</p>
+<p>And there you go, you are ready to start recieving messages!</p>
 </div>
 <div class="section" id="adding-more-reddit-accounts">
-<span id="account-add"></span><h2>Adding More Reddit Accounts:<a class="headerlink" href="#adding-more-reddit-accounts" title="Permalink to this headline">¶</a></h2>
-<p>Reddit account text</p>
+<span id="account-add"></span><h2>Adding More Reddit Accounts<a class="headerlink" href="#adding-more-reddit-accounts" title="Permalink to this headline">¶</a></h2>
+<p>You may have more than one reddit account you&#8217;d like to recieve messages from.
+Just enter the</p>
+<blockquote>
+<div>code snippet: 3.Add User</div></blockquote>
+<p>And you&#8217;ll repeat the steps in <a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a>
+Once that is done you&#8217;ll be able to choose which user gets checked. Hooray! Alt mail checked!</p>
 </div>
 <div class="section" id="types-of-jobs">
 <span id="job-types"></span><h2>Types of Jobs:<a class="headerlink" href="#types-of-jobs" title="Permalink to this headline">¶</a></h2>
-<p>Jobs types Text</p>
+<p>There are currently three tasks RedAlert can accomplish (And I think you&#8217;ll find they getcha where you need to go)</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Message Checker</dt>
+<dd><ul class="first last simple">
+<li>Exactly what it sounds like. It checks your messages! If you have multiple accounts logged in you&#8217;ll be able to choose which account you want checked. You can even have two message checkers on the same account. Why would you want that? I don&#8217;t know!</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Subreddit Keyword Monitor</dt>
+<dd><ul class="first last simple">
+<li>Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!</li>
+<li>To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You&#8217;re Awesome.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Subbmission Monitor</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>This one is handy for keeping tabs on how one of your posts is doing. Updates consist of:</dt>
+<dd><ul class="first last simple">
+<li>Number of Up votes and Down votes</li>
+<li>Number of comments the post has.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.</p>
+</li>
+<li><p class="first">Paste your post ID (or directly enter it if you already knew it) where it asks</p>
+</li>
+<li><p class="first">Enter how frequently you&#8217;d like to recieve updates about this post. Only integer values accepted, don&#8217;t be cheeky!</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </div>
 <div class="section" id="editing-your-jobs">
 <span id="job-edit"></span><h2>Editing your Jobs:<a class="headerlink" href="#editing-your-jobs" title="Permalink to this headline">¶</a></h2>
-<p>How to edit your jobs.</p>
+<p>The script is pretty strait forward.
+There are three <a class="reference internal" href="index2.html#job-types"><span>Types of Jobs:</span></a> that you can choose from when initializing RedAlert.
+Choose which ones you want and the script should walk you through what you need.</p>
+<p>Jobs persist after you close RedAlert. So once you get things how you like them, you&#8217;ll never have to worry about it again.</p>
 <div class="section" id="adding-jobs">
 <span id="job-add"></span><h3>Adding Jobs:<a class="headerlink" href="#adding-jobs" title="Permalink to this headline">¶</a></h3>
 <p>How to add a job.</p>

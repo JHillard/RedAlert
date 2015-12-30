@@ -23,12 +23,16 @@
 #http://praw.readthedocs.org/en/stable/index.html
 #Email code done with help from:  http://naelshiab.com/tutorial-send-email-python/
 
-
+clientSecret = 'not_a_secret'
+redirURI = 'http://127.0.0.1:7117/authorize_callback'
+clientID = '9F_OR6upn6Gkqw'
+userAgent = 'RedAlert App by u/AccidentalGyroscope'
 logFile = "pushedMsgs.log" 
 configFile = "RedAlert.cfg"
 jobFile = "RedAlert.job"
 jobEdit = True
 maxUsers = 10
+
 
 import time
 import praw
@@ -211,20 +215,13 @@ class UserManager():
         config.write("global emailAddr\n")
         config.write("global emailPass\n")
         config.write("global pNum \n" )
-        config.write("global clientSecret\n")
-        config.write("global redirURI\n")
-        config.write("global clientID\n")
-        config.write("global userAgent\n")
+       
         
-        config.write( "emailAddr = '" + input("Email Address (did you enable access to your email?\n https://www.google.com/settings/security/lesssecureapps): ")+ "'\n")
+        config.write( "emailAddr = '" + input("Email Address (did you enable access to your email?\nhttps://www.google.com/settings/security/lesssecureapps): \n")+ "'\n")
         config.write( "emailPass = '" + input("Email Password: ")+ "'\n")
         str1 = "Phone Number (must be in form 1234567890@{carrier address}:"
         str2 = "Ex: Verizon is @vtext.com (Check docs to find what works for you)"
         config.write( "pNum = '" + input(str1 + "\n" + str2 + "\n" )+ "'\n" )
-        config.write("clientSecret = '" + input("Client Secret (see the docs if your not sure what this is): ")+ "'\n")
-        config.write("redirURI = 'http://127.0.0.1:7117/authorize_callback' "+ "\n")
-        config.write("clientID = '" + input("Client ID (see the docs if your not sure what this is): ")+ "'\n")
-        config.write("userAgent = '"+ input("User Agent: ") + "'\n")
         config.close()
       
 

@@ -26,22 +26,20 @@
 clientSecret = 'not_a_secret'
 redirURI = 'http://127.0.0.1:7117/authorize_callback'
 clientID = '9F_OR6upn6Gkqw'
-userAgent = 'RedAlert App by u/AccidentalGyroscope'
 logFile = "pushedMsgs.log" 
 configFile = "RedAlert.cfg"
 jobFile = "RedAlert.job"
 jobEdit = True
 maxUsers = 10
 
-
-import time
-import praw
-import requests
-from pprint import pprint
-import random
-import smtplib
-import threading
-import sys
+try:
+    import time
+    import praw
+    import requests
+    import random
+    import smtplib
+    import sys
+except: raise Exception("Couldn't import needed libraries. See www.RedAlert.readthedocs.org to see required packages to run this script")
 
 class Job():
     def __init__(self, redditOblisk, job = 'M', waitTime = None, postID = None, subRT = None, keywords = None, userIndex = 0):
@@ -84,14 +82,14 @@ class Job():
         elif self.job is self.keywordKey:
             self.checkKeywordSubreddit()
         elif self.job is self.postKey:
-            if (time.time() - self.prevTime) > self.waitTime:
+            if (time.time() - self.prevTime) > self.waitTime*60:
                 self.checkPost()
                 self.prevTime = time.time()
             
     def printVars(self):
-        pprint(self.job)        
-        pprint(self.postID)
-        pprint(self.keyword)
+        print(self.job)        
+        print(self.postID)
+        print(self.keyword)
         
     def getAll(self):
          return [self.job, self.waitTime, self.postID, self.subRT, self.keywords, self.userIndex] 
@@ -150,7 +148,7 @@ class Job():
         t = requests.get(notifURL, params = payload)
         if t.status_code == 200:
             print("Pushed to Phone:")
-            pprint(payload); print("\n")
+            print(payload); print("\n")
             self.recordSent(pushId)
             return
         else: raise Exception("Couldn't send message")
@@ -202,12 +200,12 @@ class UserManager():
         try: 
             exec(config.read())
         except:
-            raise Exception("Error parsing config file. Please delete and reconfigure")
+            print("Error parsing config file. Deleting...")
+            self.genConfig()
+            self.initConfig()
         config.close()
-        clientID = '9F_OR6upn6Gkqw'
 
     def genConfig(self):
-        #http://www.howtogeek.com/howto/27051/use-email-to-send-text-messages-sms-to-mobile-phones-for-free/
         print("No config found, creating... ")
         config = open(configFile, 'a')
         config.close()
@@ -215,13 +213,14 @@ class UserManager():
         config.write("global emailAddr\n")
         config.write("global emailPass\n")
         config.write("global pNum \n" )
-       
+        config.write("global userAgent\n" )
         
         config.write( "emailAddr = '" + input("Email Address (did you enable access to your email?\nhttps://www.google.com/settings/security/lesssecureapps): \n")+ "'\n")
         config.write( "emailPass = '" + input("Email Password: ")+ "'\n")
         str1 = "Phone Number (must be in form 1234567890@{carrier address}:"
         str2 = "Ex: Verizon is @vtext.com (Check docs to find what works for you)"
         config.write( "pNum = '" + input(str1 + "\n" + str2 + "\n" )+ "'\n" )
+        config.write( "userAgent  = 'RedAlert App for u/"+ strInp("Reddit user name: ") + "'\n")
         config.close()
       
 
@@ -408,7 +407,7 @@ def addJobs():
             try: r.listSubRPosts(subRT)
             except: print("Bad Subreddit. None displayed") 
         pID = strInp("Post ID: ")
-        upFreq = intInp("Update frequency (in seconds): ")
+        upFreq = intInp("Update frequency (in minutes): ")
         try: r.makeSubMonitor(pID, upFreq)
         except: print("Bad Post ID. No changes made")
         r.writeJobs()

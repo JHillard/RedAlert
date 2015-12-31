@@ -32,6 +32,7 @@ configFile = "RedAlert.cfg"
 jobFile = "RedAlert.job"
 jobEdit = True
 maxUsers = 10
+pushList = []
 
 try:
     import time
@@ -42,7 +43,7 @@ try:
     import sys
 except: raise Exception("Couldn't import needed libraries. See www.RedAlert.readthedocs.org to see required packages to run this script")
 
-class Job():
+class Job(): #Class that contains all the information for a given job. Each job in scipt is an instance of this.
     def __init__(self, redditOblisk, job = 'M', waitTime = None, postID = None, subRT = None, keywords = None, userIndex = 0):
         self.msgKey = "M"  #keys to declare jobs. When declaring a job, give these
         self.keywordKey = "K"
@@ -77,7 +78,7 @@ class Job():
                 if self.postID is not None and isinstance(self.postID, str): return
         raise Exception("Inputs formatted incorrectly")
         
-    def execute(self):
+    def execute(self): #Runs the job
         if self.job is self.msgKey:
             self.checkMessages()
         elif self.job is self.keywordKey:
@@ -92,10 +93,10 @@ class Job():
         print(self.postID)
         print(self.keyword)
         
-    def getAll(self):
+    def getAll(self): #returns list of all relevant information.
          return [self.job, self.waitTime, self.postID, self.subRT, self.keywords, self.userIndex] 
 
-    def toString(self):
+    def toString(self): #Returns a brief descriptive sting of what the job does
         if self.job is self.msgKey:
             return "Message Checker for u/" + self.reddit.get_me()._case_name
         elif self.job is self.keywordKey:
@@ -103,7 +104,9 @@ class Job():
         elif self.job is self.postKey:
             return "Post Monitor for " + self.reddit.get_submission(submission_id = self.postID).title + ". Sending every " + str(self.waitTime) + " seconds. On r/" + self.reddit.get_submission(submission_id = self.postID).subreddit.title 
         
-    def pushDelivered(self, name):
+    def pushDelivered(self, name): #Checks whether a push has been delivered based on its ID. Returns a boolean
+        if name in pushList:
+            return True
         try:
             f = open (logFile,"r")
         except:
@@ -112,24 +115,30 @@ class Job():
             line = f.readline()
             if (line == str(name) + "\n"): 
                 f.close()
+                pushList.append(name)
                 return True
             if not line:
                 f.close()
                 return False
             
-    def recordSent(self, name):
+    def recordSent(self, name): #Records when a push has been sent to a phone. Prevents continual spamming of one unread msg.
         f = open(logFile, 'a')
         f.write(str(name) + "\n")
         f.close()
+        pushList.append(name)
 
     def subExist(self):
         temp = self.reddit.get_subreddit(self.subRT) #to check if subreddit exists. If not, this throws exception.
-        for submission in temp.get_hot(limit=10):  
+        for submission in temp.get_hot(limit=1):  
              test = submission.selftext.lower().split(' ')
     
     def sendEmail(self, pushId, body):
         if self.pushDelivered(pushId): return 
         #Code help here from http://naelshiab.com/tutorial-send-email-python/
+        otherHalf =""
+        if len(body) >= 115:
+            otherHalf = body[115:]
+            body = body[0:115]
         print(body)
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
@@ -137,8 +146,10 @@ class Job():
         prefix = 'Content-Type: text/plain; charset="us-ascii"\nMIME-Version: NA\nContent-Transfer-Encoding: 7bit\nSubject:\nFrom: \nTo:\n\n'
         #prefix attaches the proper headers and encoding information so that the passed body gets sent through. Boy this was one hell of a bug.
         msg = prefix + body
+
         server.sendmail(emailAddr, pNum, msg) 
         server.quit()
+        if otherHalf is not "": self.sendEmail(pushId, otherHalf)
         self.recordSent(pushId)
         print("Pushed to Phone:")
         print(body); print("\n\n-------------------------------------------------------\n\n")

@@ -75,7 +75,7 @@ There you go!
 
 Now when RedAlert logs in with your information, Google won't reject it.
 
-.. note:: Yes, this method is horribly insecure, but it works alright. If you're worried about being spammed or security, I'd recommend looking through the source code to see how we handle this information. Everything is stored locally, so no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.
+.. note:: Yes, this method is gross, but it works alright. If you're worried about being spammed or security, I'd recommend looking through the source code to see how we handle this information. Everything is stored locally, and no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.
 
 
 .. _red-auth:
@@ -102,7 +102,7 @@ And there you go, you are ready to start recieving messages!
 Adding More Reddit Accounts
 ---------------------------
 You may have more than one reddit account you'd like to recieve messages from.
-Just enter the 
+Just choose  the 
       code snippet: 3.Add User
 And you'll repeat the steps in :ref:`red-auth`
 Once that is done you'll be able to choose which user gets checked. Hooray! Alt mail checked!
@@ -168,19 +168,43 @@ Pretty straight forward.
 
 .. _job-del:
 
-Removing Jobs
-^^^^^^^^^^^^^
-How to remove a job.
+Deleteing Jobs:
+===============
 
-.. _job-custom:
+Also pretty strait forward. ::
 
-Custom Job Commands
-^^^^^^^^^^^^^^^^^^^
-Entering customs jobs.
+	What would you like to do?
+		1.Add job
+		2.Delete Job
+		3.Add User
+		4.Run RedAlert
+	2
+		0: Message Checker for u/AccidentalGyroscope
+		1: Keyword Checker for r/Physicsgifs Keywords: fire
+	Enter job index you'd like to delete (Choose out-of-bounds index to exit): 1
+	Job File Contents: 
+	self.makeJob( userIndex=0, job='M',waitTime ='0',postID='None',subRT='None',keywords="None")
+
+
+	You are now editing the job file.
+	Current jobs:
+		0: Message Checker for u/AccidentalGyroscope
+	What would you like to do?
+		1.Add job
+		2.Delete Job
+		3.Add User
+		4.Run RedAlert
+
 
 
 .. _running:
 
 Running the Program!
 --------------------
-Turn it on!
+
+To run the program, make sure you are in the same directory as the script.
+Then just type::
+
+	python3 RedAlert.py
+
+Todo: Startup gif.

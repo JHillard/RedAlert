@@ -95,10 +95,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#types-of-jobs">Types of Jobs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-your-jobs">Editing your Jobs</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#adding-jobs">Adding Jobs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#removing-jobs">Removing Jobs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#custom-job-commands">Custom Job Commands</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#deleteing-jobs">Deleteing Jobs:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#running-the-program">Running the Program!</a></li>
 </ul>
 </li>
@@ -253,7 +254,7 @@ There you go!</p>
 <p>Now when RedAlert logs in with your information, Google won&#8217;t reject it.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Yes, this method is horribly insecure, but it works alright. If you&#8217;re worried about being spammed or security, I&#8217;d recommend looking through the source code to see how we handle this information. Everything is stored locally, so no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.</p>
+<p class="last">Yes, this method is gross, but it works alright. If you&#8217;re worried about being spammed or security, I&#8217;d recommend looking through the source code to see how we handle this information. Everything is stored locally, and no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.</p>
 </div>
 </div>
 </div>
@@ -270,7 +271,7 @@ Login into Reddit and then allow the app. Your browser will then redirect to a d
 <div class="section" id="adding-more-reddit-accounts">
 <span id="account-add"></span><h2>Adding More Reddit Accounts<a class="headerlink" href="#adding-more-reddit-accounts" title="Permalink to this headline">¶</a></h2>
 <p>You may have more than one reddit account you&#8217;d like to recieve messages from.
-Just enter the</p>
+Just choose  the</p>
 <blockquote>
 <div>code snippet: 3.Add User</div></blockquote>
 <p>And you&#8217;ll repeat the steps in <a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a>
@@ -351,18 +352,42 @@ Job made: Message Checker for u/AccidentalGyroscope
 </pre></div>
 </div>
 </div>
-<div class="section" id="removing-jobs">
-<span id="job-del"></span><h3>Removing Jobs<a class="headerlink" href="#removing-jobs" title="Permalink to this headline">¶</a></h3>
-<p>How to remove a job.</p>
 </div>
-<div class="section" id="custom-job-commands">
-<span id="job-custom"></span><h3>Custom Job Commands<a class="headerlink" href="#custom-job-commands" title="Permalink to this headline">¶</a></h3>
-<p>Entering customs jobs.</p>
 </div>
+<div class="section" id="deleteing-jobs">
+<span id="job-del"></span><h1>Deleteing Jobs:<a class="headerlink" href="#deleteing-jobs" title="Permalink to this headline">¶</a></h1>
+<p>Also pretty strait forward.</p>
+<div class="highlight-python"><div class="highlight"><pre>What would you like to do?
+        1.Add job
+        2.Delete Job
+        3.Add User
+        4.Run RedAlert
+2
+        0: Message Checker for u/AccidentalGyroscope
+        1: Keyword Checker for r/Physicsgifs Keywords: fire
+Enter job index you&#39;d like to delete (Choose out-of-bounds index to exit): 1
+Job File Contents:
+self.makeJob( userIndex=0, job=&#39;M&#39;,waitTime =&#39;0&#39;,postID=&#39;None&#39;,subRT=&#39;None&#39;,keywords=&quot;None&quot;)
+
+
+You are now editing the job file.
+Current jobs:
+        0: Message Checker for u/AccidentalGyroscope
+What would you like to do?
+        1.Add job
+        2.Delete Job
+        3.Add User
+        4.Run RedAlert
+</pre></div>
 </div>
 <div class="section" id="running-the-program">
 <span id="running"></span><h2>Running the Program!<a class="headerlink" href="#running-the-program" title="Permalink to this headline">¶</a></h2>
-<p>Turn it on!</p>
+<p>To run the program, make sure you are in the same directory as the script.
+Then just type:</p>
+<div class="highlight-python"><div class="highlight"><pre>python3 RedAlert.py
+</pre></div>
+</div>
+<p>Todo: Startup gif.</p>
 </div>
 </div>
 

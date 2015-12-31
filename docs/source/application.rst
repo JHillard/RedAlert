@@ -2,6 +2,7 @@ Using the Script
 ================	
 
 How to run the python script just on its own.
+
 * :ref:`quick-start`
 * :ref:`first-time`
 	* :ref:`phone-num`
@@ -120,7 +121,7 @@ There are currently three tasks RedAlert can accomplish (And I think you'll find
 	* Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!
 	* To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You're Awesome.
 * Subbmission Monitor
-	* This one is handy for keeping tabs on how one of your posts is doing. Updates consist of:
+	* This one is handy for keeping tabs on how one of your posts is doing. Updates consist of
 		* Number of Up votes and Down votes
 		* Number of comments the post has.
 	* Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.
@@ -132,6 +133,7 @@ There are currently three tasks RedAlert can accomplish (And I think you'll find
 
 Editing your Jobs
 -----------------
+
 The script is pretty strait forward.
 There are three :ref:`job-types` that you can choose from when initializing RedAlert.
 Choose which ones you want and the script should walk you through what you need.
@@ -168,8 +170,8 @@ Pretty straight forward.
 
 .. _job-del:
 
-Deleteing Jobs:
-===============
+Deleting Jobs
+==============
 
 Also pretty strait forward. ::
 

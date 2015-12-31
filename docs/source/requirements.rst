@@ -13,7 +13,11 @@ Then you'll need some libraries. Here's all the libraries used in RedAlert:
 * `Praw <https://praw.readthedocs.org/en/stable/>`_
 * `Requests <http://docs.python-requests.org/en/latest/>`_
 
+TLDR; run:
+::
 
+	pip install praw
+	pip install requests
 
 You'll also need:
 

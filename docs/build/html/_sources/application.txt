@@ -17,12 +17,13 @@ How to run the python script just on its own.
 
 .. _quick-start:
 
-Quick Start:
-------------
+Quick Start
+-----------
 First :ref:`download` the script.
 Check that you have the :ref:`required-software`
 
 Then run RedAlert in terminal (be sure your terminal is open in the directory of download)::
+
 	python3 RedAlert.py
 	>>RedAlert booting...
 
@@ -34,12 +35,12 @@ RedAlert by default starts by checking your messages. So if that's all you need,
 
 .. _first-time:
 
-First Time Setup:
------------------
+First Time Setup
+----------------
 .. _phone-num:
 
-Adding your Phone Number:
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding your Phone Number
+^^^^^^^^^^^^^^^^^^^^^^^^
 In order to get text messages, you have to tell RedAlert where to send them!
 RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own `Google "Email to text provider list" <https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=email+to+text+provider+list>`_
 Here's the top hits I found at http://www.textsendr.com/emailsms.php:
@@ -62,8 +63,8 @@ Vodafone         [phone number]@vodafone.net
 
 .. _email-auth:
 
-Adding your Email:
-^^^^^^^^^^^^^^^^^^
+Adding your Email
+^^^^^^^^^^^^^^^^^
 
 RedAlert sends email through a gmail account. But you need to enable less secure apps in Gmail first.
 https://www.google.com/settings/security/lesssecureapps
@@ -109,8 +110,8 @@ Once that is done you'll be able to choose which user gets checked. Hooray! Alt 
 
 .. _job-types:
 
-Types of Jobs:
---------------
+Types of Jobs
+-------------
 There are currently three tasks RedAlert can accomplish (And I think you'll find they getcha where you need to go)
 
 * Message Checker
@@ -129,8 +130,8 @@ There are currently three tasks RedAlert can accomplish (And I think you'll find
 
 .. _job-edit:
 
-Editing your Jobs:
-------------------
+Editing your Jobs
+-----------------
 The script is pretty strait forward.
 There are three :ref:`job-types` that you can choose from when initializing RedAlert.
 Choose which ones you want and the script should walk you through what you need.
@@ -139,11 +140,12 @@ Jobs persist after you close RedAlert. So once you get things how you like them,
 
 .. _job-add:
 
-Adding Jobs:
-^^^^^^^^^^^^
+Adding Jobs
+^^^^^^^^^^^
 Pretty straight forward.
 
 ::
+
 	What would you like to do?
 		1.Add job
 		2.Delete Job
@@ -166,19 +168,19 @@ Pretty straight forward.
 
 .. _job-del:
 
-Removing Jobs:
-^^^^^^^^^^^^^^
+Removing Jobs
+^^^^^^^^^^^^^
 How to remove a job.
 
 .. _job-custom:
 
-Custom Job Commands:
-^^^^^^^^^^^^^^^^^^^^
+Custom Job Commands
+^^^^^^^^^^^^^^^^^^^
 Entering customs jobs.
 
 
 .. _running:
 
-Running the Program!:
----------------------
+Running the Program!
+--------------------
 Turn it on!

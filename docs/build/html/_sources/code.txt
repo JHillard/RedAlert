@@ -1,5 +1,8 @@
-Code Breakdown
-==============
+
+
+
+#Code Breakdown
+#==============
 * :ref:'Basic code structure'
 	* :ref:'The UserManager Class'
 	* :ref:'The Job Class'

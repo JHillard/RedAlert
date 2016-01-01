@@ -42,12 +42,10 @@ Just check that you have the :ref:`required-software` and then :ref:`download`!
 
 .. _download:
 
-Download
---------
-
+Download 
+---------------
+The easiest way to get the latest copy of RedAlert is by downloading it from the github:
 `Download from Git hub <https://github.com/JHillard/RedAlert.git>`_
-
-`Download just the script <https://github.com/JHillard/RedAlert.git>`_ #TODO, add just script
 
 
 Contribute
@@ -67,4 +65,5 @@ License
 
 The project is licensed under the MIT something or other 
 If you decide to use it, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. I'd love to know who is using the code.
-TODO, Fix
+
+You can view it here: :ref:`license`

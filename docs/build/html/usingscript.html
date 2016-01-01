@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using the Script &mdash; RedAlert 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RedAlert 1.0 documentation" href="index.html"/>
+        <link rel="next" title="First Time Setup" href="fts.html"/>
+        <link rel="prev" title="Required Software/Libraries" href="requirements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RedAlert
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Using the Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fts.html">First Time Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authred.html">Authenticating Reddit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">Running the Program!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RedAlert</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Using the Script</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/usingscript.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-the-script">
+<h1>Using the Script<a class="headerlink" href="#using-the-script" title="Permalink to this headline">¶</a></h1>
+<p>RedAlert will monitor all the things on Reddit that you want to know about. Once you go through the <a class="reference internal" href="fts.html#first-time"><span>First Time Setup</span></a> and decide what you want to monitor, you&#8217;ll never have to worry about it again. Just start it up, authenticate, and be on your merry way!</p>
+<p>This script is designed to be run in terminal on a Linux environment with Python3. Intimidated by the terminal? Don&#8217;t be! I&#8217;ll walk you through everything.</p>
+<ul>
+<li><p class="first"><a class="reference internal" href="#quick-start"><span>Quick Start</span></a></p>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="fts.html#first-time"><span>First Time Setup</span></a></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="fts.html#phone-num"><span>Adding your Phone Number</span></a></li>
+<li><a class="reference internal" href="fts.html#email-auth"><span>Adding your Email</span></a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="authred.html#red-auth"><span>Authenticating Reddit</span></a></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="authred.html#account-add"><span>Adding More Reddit Accounts</span></a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><a class="reference internal" href="jobs.html#job-types"><span>Types of Jobs</span></a></p>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="jobs.html#job-edit"><span>Editing your Jobs</span></a></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="jobs.html#job-add"><span>Adding Jobs</span></a></li>
+<li><a class="reference internal" href="jobs.html#job-del"><span>Deleting Jobs</span></a></li>
+<li><a class="reference internal" href="jobs.html#job-custom"><span>Custom Jobs</span></a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><a class="reference internal" href="run.html#running"><span>Running the Program!</span></a></p>
+</li>
+</ul>
+<div class="section" id="quick-start">
+<span id="id1"></span><h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>First <a class="reference internal" href="index.html#download"><span>Download</span></a> the script.
+Check that you have the <a class="reference internal" href="requirements.html#required-software"><span>Required Software/Libraries</span></a></p>
+<p>Then run RedAlert in terminal (be sure your terminal is open in the directory of download):</p>
+<div class="highlight-python"><div class="highlight"><pre>python3 RedAlert.py
+&gt;&gt;RedAlert booting...
+</pre></div>
+</div>
+<img alt="_images/start_upShort.gif" src="_images/start_upShort.gif" />
+<p>Follow <a class="reference internal" href="fts.html#first-time"><span>First Time Setup</span></a> and go through the steps of <a class="reference internal" href="authred.html#red-auth"><span>Authenticating Reddit</span></a>.</p>
+<p>RedAlert by default starts by checking your messages. So if that&#8217;s all you need, you can just run it from there!</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="fts.html" class="btn btn-neutral float-right" title="First Time Setup" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="requirements.html" class="btn btn-neutral" title="Required Software/Libraries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Jake Hillard.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

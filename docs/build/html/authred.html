@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Authenticating Reddit &mdash; RedAlert 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RedAlert 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Jobs" href="jobs.html"/>
+        <link rel="prev" title="First Time Setup" href="fts.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RedAlert
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingscript.html">Using the Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fts.html">First Time Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Authenticating Reddit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#give-redalert-access">Give RedAlert Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-more-reddit-accounts">Adding More Reddit Accounts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">Running the Program!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RedAlert</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Authenticating Reddit</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/authred.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="authenticating-reddit">
+<span id="red-auth"></span><h1>Authenticating Reddit<a class="headerlink" href="#authenticating-reddit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="give-redalert-access">
+<h2>Give RedAlert Access<a class="headerlink" href="#give-redalert-access" title="Permalink to this headline">¶</a></h2>
+<p>Now it&#8217;s time to let RedAlert see your messages!
+To do that, go to the link presented by RedAlert on startup. Login into Reddit and then allow the app. Your browser will then redirect to a dead webpage. Copy the access token there and paste it into the script.</p>
+<img alt="_images/auth.gif" src="_images/auth.gif" />
+<p>It&#8217;ll be different every time. Each time you start up RedAlert you&#8217;ll need to do this.</p>
+<p>And there you go, you are ready to start recieving messages!</p>
+</div>
+<div class="section" id="adding-more-reddit-accounts">
+<span id="account-add"></span><h2>Adding More Reddit Accounts<a class="headerlink" href="#adding-more-reddit-accounts" title="Permalink to this headline">¶</a></h2>
+<p>You may have more than one reddit account you&#8217;d like to recieve messages from.
+Just choose the option:</p>
+<div class="highlight-python"><div class="highlight"><pre>3.Add User
+</pre></div>
+</div>
+<p>And you&#8217;ll repeat the steps in <a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a>
+Once that is done you&#8217;ll be able to choose which user gets checked. Hooray! Alt mail checked!</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="jobs.html" class="btn btn-neutral float-right" title="Jobs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="fts.html" class="btn btn-neutral" title="First Time Setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Jake Hillard.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Jobs &mdash; RedAlert 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="RedAlert 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Running the Program!" href="run.html"/>
+        <link rel="prev" title="Authenticating Reddit" href="authred.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RedAlert
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingscript.html">Using the Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fts.html">First Time Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authred.html">Authenticating Reddit</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#types-of-jobs">Types of Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-your-jobs">Editing your Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-jobs">Adding Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-jobs">Deleting Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-jobs">Custom Jobs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">Running the Program!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RedAlert</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Jobs</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/jobs.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="jobs">
+<h1>Jobs<a class="headerlink" href="#jobs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="types-of-jobs">
+<span id="job-types"></span><h2>Types of Jobs<a class="headerlink" href="#types-of-jobs" title="Permalink to this headline">¶</a></h2>
+<p>There are currently three tasks RedAlert can accomplish (And I think you&#8217;ll find they getcha where you need to go)</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Message Checker</dt>
+<dd><ul class="first last simple">
+<li>Exactly what it sounds like. It checks your messages! If you have multiple accounts logged in you&#8217;ll be able to choose which account you want checked. You can even have two message checkers on the same account. Why would you want that? I don&#8217;t know!</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Subreddit Keyword Monitor</dt>
+<dd><ul class="first last simple">
+<li>Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!</li>
+<li>To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You&#8217;re Awesome.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Subbmission Monitor</dt>
+<dd><ul class="first last simple">
+<li>This one is handy for keeping tabs on how one of your posts is doing. Updates consist of: number of Up votes and Down votes and the number of comments the post has.</li>
+<li>Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.</li>
+<li>Paste your post ID (or directly enter it if you already knew it) where it asks</li>
+<li>Enter how frequently you&#8217;d like to recieve updates about this post. Only integer values accepted, don&#8217;t be cheeky!</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="editing-your-jobs">
+<span id="job-edit"></span><h2>Editing your Jobs<a class="headerlink" href="#editing-your-jobs" title="Permalink to this headline">¶</a></h2>
+<p>The script is pretty straight forward.
+There are three <a class="reference internal" href="#job-types"><span>Types of Jobs</span></a> that you can choose from when initializing RedAlert.
+Choose which ones you want and the script should walk you through what you need.</p>
+<p>Jobs persist after you close RedAlert. So once you get things how you like them, you&#8217;ll never have to worry about it again.</p>
+</div>
+<div class="section" id="adding-jobs">
+<span id="job-add"></span><h2>Adding Jobs<a class="headerlink" href="#adding-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Pretty straight forward.</p>
+<div class="highlight-python"><div class="highlight"><pre>What would you like to do?
+        1.Add job
+        2.Delete Job
+        3.Add User
+        4.Run RedAlert
+1
+What task do you want to add:
+        1.Message checker
+        2.Subreddit Keyword Monitor
+        3.Submission Monitor
+        4.Custom Job Entry
+        5.Back
+1
+Users:
+        0: AccidentalGyroscope
+None
+User index: 0
+Job made: Message Checker for u/AccidentalGyroscope
+</pre></div>
+</div>
+</div>
+<div class="section" id="deleting-jobs">
+<span id="job-del"></span><h2>Deleting Jobs<a class="headerlink" href="#deleting-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Also pretty straight forward.</p>
+<div class="highlight-python"><div class="highlight"><pre>What would you like to do?
+        1.Add job
+        2.Delete Job
+        3.Add User
+        4.Run RedAlert
+2
+        0: Message Checker for u/AccidentalGyroscope
+        1: Keyword Checker for r/Physicsgifs Keywords: fire
+Enter job index you&#39;d like to delete (Choose out-of-bounds index to exit): 1
+Job File Contents:
+self.makeJob( userIndex=0, job=&#39;M&#39;,waitTime =&#39;0&#39;,postID=&#39;None&#39;,subRT=&#39;None&#39;,keywords=&quot;None&quot;)
+
+
+You are now editing the job file.
+Current jobs:
+        0: Message Checker for u/AccidentalGyroscope
+What would you like to do?
+        1.Add job
+        2.Delete Job
+        3.Add User
+        4.Run RedAlert
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-jobs">
+<span id="job-custom"></span><h2>Custom Jobs<a class="headerlink" href="#custom-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Here you can enter arbitrary job commands to be executed on startup. The typical use for this would be:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="bp">self</span><span class="o">.</span><span class="n">makeJob</span><span class="p">(</span> <span class="n">userIndex</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">job</span><span class="o">=</span><span class="s">&#39;K&#39;</span><span class="p">,</span><span class="n">waitTime</span> <span class="o">=</span><span class="s">&#39;0&#39;</span><span class="p">,</span><span class="n">postID</span><span class="o">=</span><span class="s">&#39;None&#39;</span><span class="p">,</span><span class="n">subRT</span><span class="o">=</span><span class="s">&#39;Physicsgifs&#39;</span><span class="p">,</span><span class="n">keywords</span><span class="o">=</span><span class="s">&quot;Fire&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Which is the same as selecting a Subreddit Keyword Monitor for r/PhysicsGifs and looking for the keyword &#8220;fire&#8221;.</p>
+<p>This can be handy if you want extremely find control over the values you pass to the jobs.
+Any string you type into the custom job input will be executed with the python exec() call. This means that you can add whatever code you might want to run at startup.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This method presents a risk. I added it because it can give you a lot of power in how you use this script. But you could delete systen files or wreak havock on your system if you&#8217;re not careful. So be careful.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="run.html" class="btn btn-neutral float-right" title="Running the Program!" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="authred.html" class="btn btn-neutral" title="Authenticating Reddit" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Jake Hillard.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

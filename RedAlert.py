@@ -193,9 +193,9 @@ class Job(): #Class that contains all the information for a given job. Each job 
                 push = "Keyword found in r/" + self.subRT + ":\n" + submission.title + "\n" + submission.selftext
                 self.sendEmail(str(submission.id), push)
                 #self.phonePush(str(submission.id), "", "Keyword found in " + self.subRT, submission.title + "\n" + submission.selftext )
-  
 
-class UserManager():
+
+class UserManager(): #Keeps track of authenticated reddit instances and executes their jobs.
     def __init__(self):
         self.users = []
         self.jobList = []
@@ -203,7 +203,7 @@ class UserManager():
         self.makeUser()        
         self.initJobs()
         
-    def initConfig(self):
+    def initConfig(self):  #runs the config file at start.
         try:
             config = open(configFile)
         except:
@@ -250,7 +250,7 @@ class UserManager():
                 line = jobs.read()
                 exec(line)
         except IndexError:
-            print("Job file contains jobs for multiple users. Please authenticate those users now.\n")
+            print("Job file contains jobs for multiple users. Please authenticate   those users now.\n")
             self.jobList = []
             self.makeUser()
             self.initJobs()
@@ -288,6 +288,7 @@ class UserManager():
             self.AccessCode = input("Access Code: ")
             self.authenticatedUser = accessInformation = r.get_access_information(self.AccessCode)
             print("Reddit Authenticated Successfully\n")
+        except NameError: raise Exception("Bad Config file. Please delete RedAlert.cfg and reconfigure.")
         except:
             raise Exception("Reddit Failed to authenticate. Please restart and try again. Was the code pasted incorrectly?")
         return r

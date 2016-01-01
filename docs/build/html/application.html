@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Using the Script &mdash; RedAlert 1.0 documentation</title>
+  <title>&lt;no title&gt; &mdash; RedAlert 1.0 documentation</title>
   
 
   
@@ -30,9 +30,7 @@
   
 
   
-    <link rel="top" title="RedAlert 1.0 documentation" href="index.html"/>
-        <link rel="next" title="The Code:" href="code.html"/>
-        <link rel="prev" title="Required Software/Libraries" href="requirements.html"/> 
+    <link rel="top" title="RedAlert 1.0 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -81,29 +79,12 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="requirements.html">Required Software/Libraries</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Using the Script</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#first-time-setup">First Time Setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#adding-your-phone-number">Adding your Phone Number</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-your-email">Adding your Email</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#authenticating-reddit">Authenticating Reddit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-more-reddit-accounts">Adding More Reddit Accounts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#types-of-jobs">Types of Jobs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#editing-your-jobs">Editing your Jobs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#adding-jobs">Adding Jobs</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#deleting-jobs">Deleting Jobs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#running-the-program">Running the Program!</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="code.html">The Code:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fts.html">First Time Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authred.html">Authenticating Reddit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">Running the Program!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
@@ -135,7 +116,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Using the Script</li>
+    <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -149,264 +130,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="using-the-script">
-<h1>Using the Script<a class="headerlink" href="#using-the-script" title="Permalink to this headline">¶</a></h1>
-<p>How to run the python script just on its own.</p>
-<ul>
-<li><p class="first"><a class="reference internal" href="#quick-start"><span>Quick Start</span></a></p>
-</li>
-<li><dl class="first docutils">
-<dt><a class="reference internal" href="#first-time"><span>First Time Setup</span></a></dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="index2.html#phone-num"><span>Formatting your Phone Number:</span></a></li>
-<li><a class="reference internal" href="index2.html#email-auth"><span>Enabling Email Authorization:</span></a></li>
-<li><a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a></li>
-<li><a class="reference internal" href="index2.html#account-add"><span>Adding More Reddit Accounts:</span></a></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p class="first"><a class="reference internal" href="index2.html#job-types"><span>Types of Jobs:</span></a></p>
-</li>
-<li><dl class="first docutils">
-<dt><a class="reference internal" href="index2.html#job-edit"><span>Editing your Jobs:</span></a></dt>
-<dd><ul class="first last simple">
-<li><a class="reference internal" href="index2.html#job-add"><span>Adding Jobs:</span></a></li>
-<li><a class="reference internal" href="index2.html#job-del"><span>Removing Jobs:</span></a></li>
-<li><a class="reference internal" href="index2.html#job-custom"><span>Custom Job Commands:</span></a></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p class="first"><a class="reference internal" href="index2.html#running"><span>Running the Program!:</span></a></p>
-</li>
-</ul>
-<div class="section" id="quick-start">
-<span id="id1"></span><h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
-<p>First <a class="reference internal" href="index.html#download"><span>Download</span></a> the script.
-Check that you have the <a class="reference internal" href="requirements.html#required-software"><span>Required Software/Libraries</span></a></p>
-<p>Then run RedAlert in terminal (be sure your terminal is open in the directory of download):</p>
-<div class="highlight-python"><div class="highlight"><pre>python3 RedAlert.py
-&gt;&gt;RedAlert booting...
-</pre></div>
-</div>
-<p>TODO Figure 3</p>
-<p>Follow <a class="reference internal" href="#first-time"><span>First Time Setup</span></a> and go through the steps of <a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a>.</p>
-<p>RedAlert by default starts by checking your messages. So if that&#8217;s all you need, you can just run it from there!</p>
-</div>
-<div class="section" id="first-time-setup">
-<span id="first-time"></span><h2>First Time Setup<a class="headerlink" href="#first-time-setup" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="adding-your-phone-number">
-<span id="phone-num"></span><h3>Adding your Phone Number<a class="headerlink" href="#adding-your-phone-number" title="Permalink to this headline">¶</a></h3>
-<p>In order to get text messages, you have to tell RedAlert where to send them!
-RedAlert sends text messages through emails to your phone. So you need to format your phone number into an email address. You can look up the carriers on your own <a class="reference external" href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=email+to+text+provider+list">Google &#8220;Email to text provider list&#8221;</a>
-Here&#8217;s the top hits I found at <a class="reference external" href="http://www.textsendr.com/emailsms.php">http://www.textsendr.com/emailsms.php</a>:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="28%" />
-<col width="72%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Cell Provider</th>
-<th class="head">Email Address</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>AT&amp;T</td>
-<td>[phone number]&#64;txt.att.net</td>
-</tr>
-<tr class="row-odd"><td>Qwest</td>
-<td>[phone number]&#64;qwestmp.com</td>
-</tr>
-<tr class="row-even"><td>Sprint</td>
-<td>[phone number]&#64;messaging.sprintpcs.com</td>
-</tr>
-<tr class="row-odd"><td>T Mobile</td>
-<td>[phone number]&#64;tmomail.net</td>
-</tr>
-<tr class="row-even"><td>T Mobile (Ger)</td>
-<td>[phone number]&#64;T-D1-SMS.de</td>
-</tr>
-<tr class="row-odd"><td>T Mobile UK</td>
-<td>[phone number]&#64;t-mobile.uk.net</td>
-</tr>
-<tr class="row-even"><td>V Mobile CA</td>
-<td>[phone number]&#64;vmobile.ca</td>
-</tr>
-<tr class="row-odd"><td>Verizon</td>
-<td>[phone number]&#64;vtext.com</td>
-</tr>
-<tr class="row-even"><td>Virgin Mobile</td>
-<td>[phone number]&#64;vmobl.com</td>
-</tr>
-<tr class="row-odd"><td>Vodacom Africa</td>
-<td>[phone number]&#64;voda.co.za</td>
-</tr>
-<tr class="row-even"><td>Vodafone</td>
-<td>[phone number]&#64;vodafone.net</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="adding-your-email">
-<span id="email-auth"></span><h3>Adding your Email<a class="headerlink" href="#adding-your-email" title="Permalink to this headline">¶</a></h3>
-<p>RedAlert sends email through a gmail account. But you need to enable less secure apps in Gmail first.
-<a class="reference external" href="https://www.google.com/settings/security/lesssecureapps">https://www.google.com/settings/security/lesssecureapps</a></p>
-<p>Follow that link, log into your email, and turn on access for less secure apps.
-There you go!</p>
-<p>Now when RedAlert logs in with your information, Google won&#8217;t reject it.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Yes, this method is gross, but it works alright. If you&#8217;re worried about being spammed or security, I&#8217;d recommend looking through the source code to see how we handle this information. Everything is stored locally, and no bad things are transmitted across the internet. Still, probably not the best idea to use your email attached to your bank account. Will be changed on future release.</p>
-</div>
-</div>
-</div>
-<div class="section" id="authenticating-reddit">
-<span id="red-auth"></span><h2>Authenticating Reddit<a class="headerlink" href="#authenticating-reddit" title="Permalink to this headline">¶</a></h2>
-<p>Now it&#8217;s time to let RedAlert see your messages!
-To do that, go to the link presented by RedAlert on startup.</p>
-<p>Todo Figure 1.</p>
-<p>It&#8217;ll be different every time. Each time you start up RedAlert you&#8217;ll need to do this.
-Login into Reddit and then allow the app. Your browser will then redirect to a dead webpage. Copy the access token there and paste it into the script.</p>
-<p>Todo Figure 2.</p>
-<p>And there you go, you are ready to start recieving messages!</p>
-</div>
-<div class="section" id="adding-more-reddit-accounts">
-<span id="account-add"></span><h2>Adding More Reddit Accounts<a class="headerlink" href="#adding-more-reddit-accounts" title="Permalink to this headline">¶</a></h2>
-<p>You may have more than one reddit account you&#8217;d like to recieve messages from.
-Just choose  the</p>
-<blockquote>
-<div>code snippet: 3.Add User</div></blockquote>
-<p>And you&#8217;ll repeat the steps in <a class="reference internal" href="#red-auth"><span>Authenticating Reddit</span></a>
-Once that is done you&#8217;ll be able to choose which user gets checked. Hooray! Alt mail checked!</p>
-</div>
-<div class="section" id="types-of-jobs">
-<span id="job-types"></span><h2>Types of Jobs<a class="headerlink" href="#types-of-jobs" title="Permalink to this headline">¶</a></h2>
-<p>There are currently three tasks RedAlert can accomplish (And I think you&#8217;ll find they getcha where you need to go)</p>
-<ul>
-<li><dl class="first docutils">
-<dt>Message Checker</dt>
-<dd><ul class="first last simple">
-<li>Exactly what it sounds like. It checks your messages! If you have multiple accounts logged in you&#8217;ll be able to choose which account you want checked. You can even have two message checkers on the same account. Why would you want that? I don&#8217;t know!</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Subreddit Keyword Monitor</dt>
-<dd><ul class="first last simple">
-<li>Monitors a specific subreddit for keywords that you specify. Want to always know when someone mentions an app you wrote? I sure do. I use RedAlert to monitor when people talk about RedAlert!</li>
-<li>To use it, just enter a subreddit and enter your keywords. Seperate them with spaces. Like this: You&#8217;re Awesome.</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Subbmission Monitor</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>This one is handy for keeping tabs on how one of your posts is doing. Updates consist of</dt>
-<dd><ul class="first last simple">
-<li>Number of Up votes and Down votes</li>
-<li>Number of comments the post has.</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p class="first">Start by entering the subreddit where you posted your submission. This will display all the recent posts in a subreddit and their post IDs. Find yours and copy it.</p>
-</li>
-<li><p class="first">Paste your post ID (or directly enter it if you already knew it) where it asks</p>
-</li>
-<li><p class="first">Enter how frequently you&#8217;d like to recieve updates about this post. Only integer values accepted, don&#8217;t be cheeky!</p>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</div>
-<div class="section" id="editing-your-jobs">
-<span id="job-edit"></span><h2>Editing your Jobs<a class="headerlink" href="#editing-your-jobs" title="Permalink to this headline">¶</a></h2>
-<p>The script is pretty strait forward.
-There are three <a class="reference internal" href="index2.html#job-types"><span>Types of Jobs:</span></a> that you can choose from when initializing RedAlert.
-Choose which ones you want and the script should walk you through what you need.</p>
-<p>Jobs persist after you close RedAlert. So once you get things how you like them, you&#8217;ll never have to worry about it again.</p>
-<div class="section" id="adding-jobs">
-<span id="job-add"></span><h3>Adding Jobs<a class="headerlink" href="#adding-jobs" title="Permalink to this headline">¶</a></h3>
-<p>Pretty straight forward.</p>
-<div class="highlight-python"><div class="highlight"><pre>What would you like to do?
-        1.Add job
-        2.Delete Job
-        3.Add User
-        4.Run RedAlert
-1
-What task do you want to add:
-        1.Message checker
-        2.Subreddit Keyword Monitor
-        3.Submission Monitor
-        4.Custom Job Entry
-        5.Back
-1
-Users:
-        0: AccidentalGyroscope
-None
-User index: 0
-Job made: Message Checker for u/AccidentalGyroscope
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="deleting-jobs">
-<span id="job-del"></span><h1>Deleting Jobs<a class="headerlink" href="#deleting-jobs" title="Permalink to this headline">¶</a></h1>
-<p>Also pretty strait forward.</p>
-<div class="highlight-python"><div class="highlight"><pre>What would you like to do?
-        1.Add job
-        2.Delete Job
-        3.Add User
-        4.Run RedAlert
-2
-        0: Message Checker for u/AccidentalGyroscope
-        1: Keyword Checker for r/Physicsgifs Keywords: fire
-Enter job index you&#39;d like to delete (Choose out-of-bounds index to exit): 1
-Job File Contents:
-self.makeJob( userIndex=0, job=&#39;M&#39;,waitTime =&#39;0&#39;,postID=&#39;None&#39;,subRT=&#39;None&#39;,keywords=&quot;None&quot;)
-
-
-You are now editing the job file.
-Current jobs:
-        0: Message Checker for u/AccidentalGyroscope
-What would you like to do?
-        1.Add job
-        2.Delete Job
-        3.Add User
-        4.Run RedAlert
-</pre></div>
-</div>
-<div class="section" id="running-the-program">
-<span id="running"></span><h2>Running the Program!<a class="headerlink" href="#running-the-program" title="Permalink to this headline">¶</a></h2>
-<p>To run the program, make sure you are in the same directory as the script.
-Then just type:</p>
-<div class="highlight-python"><div class="highlight"><pre>python3 RedAlert.py
-</pre></div>
-</div>
-<p>Todo: Startup gif.</p>
-</div>
-</div>
-
+  
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="code.html" class="btn btn-neutral float-right" title="The Code:" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="requirements.html" class="btn btn-neutral" title="Required Software/Libraries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

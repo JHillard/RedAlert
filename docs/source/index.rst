@@ -12,8 +12,11 @@ Contents:
    :maxdepth: 3
 
    requirements
-   application
-   code
+   usingscript
+   fts
+   authred
+   jobs
+   run
    license
    questions
 
@@ -35,7 +38,7 @@ Installation
 ------------
 
 RedAlert is a script, so it doesn't need to be 'installed' in the traditional sense.
-Just check the :ref:`required-software` and then :ref:`download`! 
+Just check that you have the :ref:`required-software` and then :ref:`download`! 
 
 .. _download:
 

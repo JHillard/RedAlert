@@ -38,7 +38,8 @@ Installation
 ------------
 
 RedAlert is a script, so it doesn't need to be 'installed' in the traditional sense.
-Just check that you have the :ref:`required-software` and then :ref:`download`! 
+Just check that you have the :ref:`required-software` and then `Download <https://github.com/JHillard/RedAlert.git>`_
+! 
 
 .. _download:
 
@@ -63,7 +64,7 @@ If you are having issues, please let us know. RedAlertBot@gmail.com
 License
 -------
 
-The project is licensed under the MIT something or other 
-If you decide to use it, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. I'd love to know who is using the code.
+The project is licensed under the MIT something or other. 
+If you decide to do something with the code, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. I'd love to know who is using the code.
 
 You can view it here: :ref:`license`

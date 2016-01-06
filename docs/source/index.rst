@@ -3,7 +3,7 @@ Welcome to RedAlert's documentation!
 ====================================
 If you want to post to reddit and walk away, this is the app for you. Perfect for content creators.
 
-RedAlert monitors reddit and notifies you via text message when something happening. It will directly text you your PMs (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
+RedAlert monitors reddit and notifies you via text message when something is happening. It will directly text you your PMs (across multiple alt accounts), let you know how your important post is doing, and notify you if anyone mentions keywords you can input.
 
 Contents:
 =========
@@ -65,6 +65,6 @@ License
 -------
 
 The project is licensed under the MIT something or other. 
-If you decide to do something with the code, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. I'd love to know who is using the code.
+If you decide to do something with the code, I ask that you send me an email (RedAlertBot@gmail.com) just saying hello. Let's talk about your project together (and I'd love to know who is using the code).
 
 You can view it here: :ref:`license`

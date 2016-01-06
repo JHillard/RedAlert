@@ -102,4 +102,4 @@ Which is the same as selecting a Subreddit Keyword Monitor for r/PhysicsGifs and
 This can be handy if you want extremely find control over the values you pass to the jobs.
 Any string you type into the custom job input will be executed with the python exec() call. This means that you can add whatever code you might want to run at startup. 
 
-.. note:: This method presents a risk. I added it because it can give you a lot of power in how you use this script. But you could delete systen files or wreak havock on your system if you're not careful. So be careful.
+.. note:: This method presents a risk. I added it because it can give you a lot of power in how you use this script. But you could delete files or wreak havock on your system if you're not careful. So be careful.
